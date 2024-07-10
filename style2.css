@@ -1,0 +1,283 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+
+  --yellow:red;
+  --parent:yellow;
+  --child:blue;
+  --smallw:50px;
+  --default:400px;
+  --display:absolute;
+  --display-inline:inline-block;
+}
+@media only screen and (max-width: 780px){
+  
+nav{
+  display: flex;
+  background-color: aqua;
+  width: 1300px;
+  height: 90px;
+  flex-direction: 2fr 1fr;
+}
+
+nav .logo img{
+  width: 80px;
+  height: 60px;
+}
+nav .logo{
+  display: flex;
+  gap: 5px;
+  align-content: center;
+}
+nav .logo h3{
+  padding: 20px;
+  color: var(--child);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-stretch: expanded;
+  font-size: 22px;
+}
+
+nav .right-top{
+display: flex;
+  gap: 20px;
+align-items:center;
+margin-left: 700px;
+margin-top: 5px;
+text-decoration: none;
+justify-content: space-between;
+
+}
+
+nav .right-top .signin1 {
+  width: 100px;
+  height: 40px;
+align-content: center;
+text-align: center;
+background-color: aliceblue;
+}
+
+nav .right-top .signin2{
+  width: 150px;
+  height: 40px;
+align-content: center;
+text-align: center;
+background-color: aliceblue;
+}
+ h3{
+
+ color: white;
+}
+
+.secondlayer{
+  background-image: url(./3.jpg);
+  width: 1300px;
+  height: 200px;
+margin:5px;
+color:#ffff;
+font-weight: 600;
+padding: 40px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+}
+.secondlayer .caption{
+  width: 40px;
+  height: 20px;
+  padding: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.container .left {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+.container .left .item{
+  background-color: rgb(130, 188, 235);
+  color: aliceblue;
+  padding: 15px;
+}
+
+.item1{
+  background-color: rgb(15, 71, 173);
+  padding: 15px;
+  color: aliceblue;
+}
+
+.container .rit{
+  width: 1180px; 
+  height: 350px;
+}
+.rit h3{
+  color:red;
+}
+.rit h2{
+  color: rgb(9, 9, 180);
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bottom >div{
+  width:200px;
+  background-color: rgb(130, 188, 235);
+  padding: 5px;
+  color: aliceblue;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+}
+@media only screen and (min-width:780px){
+ 
+body{
+  background-color: rgb(164, 228, 228);
+}
+ .bottom >div:hover{
+  background-color: rgb(235, 180, 112);
+  color: red;
+}
+
+nav{
+  display: flex;
+  background-color: aqua;
+  width: 1300px;
+  height: 90px;
+  flex-direction: 2fr 1fr;
+}
+
+nav .logo img{
+  width: 80px;
+  height: 60px;
+}
+nav .logo{
+  display: flex;
+  gap: 5px;
+  align-content: center;
+}
+nav .logo h3{
+  padding: 20px;
+  color: var(--child);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-stretch: expanded;
+  font-size: 22px;
+}
+
+nav .right-top{
+display: flex;
+  gap: 20px;
+align-items:center;
+margin-left: 700px;
+margin-top: 5px;
+text-decoration: none;
+justify-content: space-between;
+
+}
+
+nav .right-top .signin1 {
+  width: 100px;
+  height: 40px;
+align-content: center;
+text-align: center;
+background-color: aliceblue;
+}
+
+nav .right-top .signin2{
+  width: 150px;
+  height: 40px;
+align-content: center;
+text-align: center;
+background-color: aliceblue;
+}
+ h3{
+
+ color: white;
+}
+
+.secondlayer{
+  background-image: url(./3.jpg);
+  width: 1300px;
+  height: 200px;
+margin:5px;
+color:#ffff;
+font-weight: 600;
+padding: 40px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+}
+.secondlayer .caption{
+  width: 40px;
+  height: 20px;
+  padding: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.container .left {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+.container .left .item{
+  background-color: rgb(130, 188, 235);
+  color: aliceblue;
+  padding: 15px;
+}
+
+.item1{
+  background-color: rgb(15, 71, 173);
+  padding: 15px;
+  color: aliceblue;
+}
+
+.container .rit{
+  width: 1180px; 
+  height: 350px;
+}
+.rit h3{
+  color:red;
+}
+.rit h2{
+  color: rgb(9, 9, 180);
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bottom >div{
+  width:200px;
+  background-color: rgb(130, 188, 235);
+  padding: 5px;
+  color: aliceblue;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ .container .left .item:hover{
+  color: rgb(31, 208, 231);
+  background-color: aliceblue;
+
+}
+
+}
+
+
+
+
+

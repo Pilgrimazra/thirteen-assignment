@@ -1,23 +1,21 @@
 body{
-
     background-color: rgb(235, 234, 228);
 }
 
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 .top{
     display: flex;
-   padding: 10px;
+    padding: 10px;
     background-color: rgb(5, 6, 87);
     width: auto;
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 
 .top .capacity{
@@ -26,107 +24,93 @@ body{
     margin: 10px;
     display: inline-block;
     font-size: 25px;
-
 }
+
 .top img{
     display: inline-block;
     width: 60px;
     height: 60px;
     margin: 10px;
     padding: 5px;
-
 }
 
 .top .menu{
     margin: 0px;
     padding: 10px;
     display: inline-block;
-    
-    
-
 }
 
 .menu ul{
     margin: 5px;
     color: rgb(243, 239, 239);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-  display: inline-block;
-    
-    
+    display: inline-block;
 }
- .menu ul li {
+
+.menu ul li{
     display: inline-block;
     padding: 15px;
-
-    
 }
-/* .items >.item{
-    background-color: aliceblue;
-} */
 
 .flex-page{
-display: grid;
-margin: 0px;
-grid-template-columns:1fr 1fr 1fr;
-
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 .first{
     margin: 10px;
     width: 600px;
     height: 150px;
     border-radius: 5%;
-    background-color:aliceblue;
-  
+    background-color: aliceblue;
 }
-.fourth{
 
+.fourth{
     margin: 10px;
     width: 600px;
     height: 850px;
     border-radius: 5%;
-    background-color:aliceblue;
-    border:solid 2px azure;
+    background-color: aliceblue;
+    border: solid 2px azure;
 }
 
 .second{
-
     margin: 10px;
     width: 600px;
     height: 800px;
     border-radius: 5%;
     background-color: aliceblue;
-    border:solid 2px azure;
+    border: solid 2px azure;
 }
+
 .fifth{
     margin: 10px;
     width: 600px;
     height: 100px;
     border-radius: 5%;
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
 
 .sixth{
-
     margin: 15px;
     width: 600px;
     height: 1000px;
     border-radius: 5%;
     background-color: aliceblue;
-    border:solid 2px azure;
+    border: solid 2px azure;
 }
-
 
 .first h3{
     margin-top: 20px;
     padding: 20px;
 }
-.first input{
 
+.first input{
     border-radius: 5px;
     height: 30px;
-    border-color:seashell;
-
+    border-color: seashell;
 }
 
 .first button{
@@ -136,38 +120,78 @@ grid-template-columns:1fr 1fr 1fr;
     background-color: rgb(16, 4, 59);
     color: white;
     font-size: 16px;
-    padding:-30px;
     cursor: pointer;
-
 }
+
 .second img{
-    display:inline-block;
+    display: inline-block;
     width: 80px;
     height: 80px;
     margin: 10px;
 }
-.second >div{
+
+.second > div{
     margin: 0px;
     display: inline-block;
     padding: 20px;
-    float: left;
-
 }
+
 .second .date{
     float: right;
 }
- .bottom img{
 
+.bottom img{
     width: 400px;
     height: 400px;
 }
- span{
+
+span{
     color: blueviolet;
 }
- .bottom .after-image{
+
+.bottom .after-image{
     margin: -13px;
-   border: 4px solid whitesmoke;
-   width: 400px;
-   padding: 5px;
-   
- }
+    border: 4px solid whitesmoke;
+    width: 400px;
+    padding: 5px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown ul ul{
+    left: 100%;
+    top: 0;
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+
+.dropdown ul li{
+    padding: 12px 16px;
+    color: black; /* Updated color */
+}
+
+.dropdown ul li:hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown ul ul{
+    display: none;
+}
+
+.dropdown ul li:hover > ul{
+    display: block;
+}
